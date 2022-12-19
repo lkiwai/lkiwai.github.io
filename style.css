@@ -1,4 +1,3 @@
-/* Built by Sharhabeel Morad */
 :root {
     --font-heading-01 : 'Roboto', sans-serif;
     --font-paragraph-01 : 'Merriweather', serif;
@@ -14,7 +13,7 @@ body {
     box-sizing: border-box;
     
 }
-/* navigation bar */
+/* nav bar */
 #nav-container {
     display: flex;
     flex-direction: row;
@@ -22,7 +21,7 @@ body {
     margin: 0.5rem 3rem;
 }
 .logo {
-    height: 100px;
+    height: 85px;
 }
 .nav-links {
     display: flex;
@@ -34,13 +33,27 @@ body {
     margin-right: 1rem;
 }
 .nav-links a {
-    font-size: 24px;
+    font-size: 20px;
     font-family: var(--font-heading-01);
     text-decoration: none;
     color: #000;
 }
 .nav-links a:hover {
     color: rgb(255, 153, 0);
+}
+.fa-solid {
+    display: none;
+}
+/* nav responsive */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+    .fa-solid {
+        display: block;
+        margin-top: 1.6rem;
+        padding-top: 0.7rem;
+    }
 }
 /* hero */
 
