@@ -1,0 +1,47 @@
+/* Built by Sharhabeel Morad */
+:root {
+    --font-heading-01 : 'Roboto', sans-serif;
+    --font-paragraph-01 : 'Merriweather', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+body {
+    box-sizing: border-box;
+    
+}
+/* navigation bar */
+#nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 3rem;
+}
+.logo {
+    height: 100px;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+.nav-links li {
+    margin-top: 1.6rem;
+    list-style: none;
+    margin-right: 1rem;
+}
+.nav-links a {
+    font-size: 24px;
+    font-family: var(--font-heading-01);
+    text-decoration: none;
+    color: #000;
+}
+.nav-links a:hover {
+    color: rgb(255, 153, 0);
+}
+/* hero */
+
+
