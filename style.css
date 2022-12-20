@@ -13,13 +13,18 @@
 
 body {
     box-sizing: border-box;
+    width: 100%;
     
 }
 /* nav bar */
 #nav-container {
+    z-index: 100;
     display: grid;
+    position: sticky;
+    background-color: #fff;
+    top: 0;
     grid-template-columns: 1fr 2fr;
-    margin: 0.5rem 3rem;
+    padding: 0.5rem 3rem;
 }
 .logo {
     height: 85px;
@@ -43,13 +48,16 @@ body {
 .donate-btn {
     display: block;
     margin-top: 0.8rem;
-    height: 50px;
+    height: 45px;
     width: 180px;
     color: #fff;
     border: none;
     border-radius: 12px;
     background: var(--color-accent-color);
     cursor: pointer;
+}
+.donate-btn:hover {
+    transform: scale(1.03);
 }
 .nav-links a:hover {
     color: var(--color-accent-color);
@@ -73,5 +81,47 @@ body {
     }
 }
 /* hero */
+.hero-container {
+    display: grid;
+}
+.hero-img-bg {
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%);
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero-text h1,p {
+    padding: 0.6rem;
+    color: #fff;
+}
+.hero-text h1 {
+    font-family: var(--font-heading-01);
+    font-size: 4rem;
+}
+.hero-text p {
+    font-family: var(--font-paragraph-01);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.donate-btn-primary {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: var(--font-heading-01);
+    width: 12rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    background:var(--color-accent-color);
+}
+.donate-btn-primary:hover {
+    transform: scale(1.03);
+}
 
 
