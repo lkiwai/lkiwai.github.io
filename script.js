@@ -4,8 +4,8 @@ let lastScrollY = window.scrollY;
 
 
     window.addEventListener("scroll", () => {
-
-        if (lastScrollY <window.scrollY) {
+        // && window.screen.width > 1024 ...turns off the hide effect at that width 
+        if (lastScrollY <window.scrollY && window.screen.width > 1024) {
             navBar.classList.add("nav-container-hidden")
         } else {
             navBar.classList.remove("nav-container-hidden")
