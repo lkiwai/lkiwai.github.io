@@ -16,7 +16,7 @@
 
 body {
     overflow-x: hidden;
-    background-color: #000;
+    /* background-color: #000; */
 }
 h1 {
     font-family: var(--font-heading-01);
@@ -188,6 +188,7 @@ p,li {
 /* about section */
 .about-border {
     display: block;
+    margin-top: 12rem;
     height: 6rem;
     visibility: hidden;
 }.about-container {
@@ -204,6 +205,36 @@ p,li {
 .about-us-content {
     text-align: center;
     margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+    .about-border {
+        margin-top: 2rem;
+        height: 1rem;
+    }
+    .about-container {
+        padding: 0rem 1.5rem;
+    }
+    .about-container h1 {
+        font-size: 3rem;
+    }
+    .about-container p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .about-border {
+        margin-top: 2rem;
+        height: 1rem;
+    }
+    .about-container {
+        padding: 0rem 1rem;
+    }
+    .about-container h1 {
+        font-size: 3rem;
+    }
+    .about-container p {
+        font-size: 1rem;
+    }
 }
 .about-us-content p {
     padding-bottom: 1rem;
@@ -222,6 +253,25 @@ p,li {
 .mission-list li {
     list-style: circle;
     margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+    .vision-mission {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0rem 1rem;
+    }
+}
+@media (max-width: 480px) {
+    li {
+        font-size: 1rem;
+    }
+    .vision-mission {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0rem 1rem;
+    }
 }
 /* governance */
 .governance {
@@ -249,4 +299,34 @@ p,li {
     height: 200px;
     width: 200px;
     margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+    .governance {
+        display: flex;
+        flex-direction: column;
+    }
+    .executive-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .executive-officers {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        gap: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .governance {
+        display: flex;
+        flex-direction: column;
+    }
+    .executive-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .executive-officers {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
 }
