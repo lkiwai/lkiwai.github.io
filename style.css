@@ -191,7 +191,8 @@ p,li {
     margin-top: 12rem;
     height: 6rem;
     visibility: hidden;
-}.about-container {
+}
+.about-container {
     display: grid;
     padding: 0rem 8rem;
 }
@@ -311,6 +312,7 @@ p,li {
     }
     .executive-officers {
         display: grid;
+        justify-content: center;
         grid-template-columns: 300px 300px;
         gap: 20px;
     }
@@ -329,4 +331,27 @@ p,li {
         flex-direction: column;
         gap: 50px;
     }
+}
+/* programs section */
+.program-border {
+    display: block;
+    margin-top: 8rem;
+    height: 6rem;
+    visibility: hidden;
+}
+.program-container {
+    display: grid;
+    padding: 0rem 8rem;
+}
+.program-container h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.program-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.program-container p {
+    margin-bottom: 1rem;
 }
