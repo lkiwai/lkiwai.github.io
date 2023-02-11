@@ -355,3 +355,22 @@ p,li {
 .program-container p {
     margin-bottom: 1rem;
 }
+.mahad-img {
+    float: left;
+    height: 480px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.braces-img {
+    float: right;
+    height: 380px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.kagan-img {
+    float: left;
+    height: 480px;
+    width: 720px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
