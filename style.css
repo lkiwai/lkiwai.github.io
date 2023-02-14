@@ -11,7 +11,8 @@
     padding: 0;
     box-sizing: border-box;
     outline: none !important;
-    transition: 0.3s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -62,6 +63,7 @@ p,li {
     font-family: var(--font-heading-01);
     text-decoration: none;
     color: #000;
+    transition: 0.3s;
 }
 .donate-btn {
     display: block;
@@ -73,6 +75,7 @@ p,li {
     border-radius: 12px;
     background: var(--color-accent-color);
     cursor: pointer;
+    transition: 0.3s;
 }
 .donate-btn:hover {
     transform: scale(1.03);
@@ -152,6 +155,7 @@ p,li {
     border-radius: 12px;
     color: #fff;
     background:var(--color-accent-color);
+    transition: 0.3s;
 }
 .donate-btn-primary:hover {
     transform: scale(1.03);
@@ -343,37 +347,17 @@ p,li {
     display: grid;
     padding: 0rem 8rem;
 }
-@media (max-width: 480px) {
-    .program-container {
-        padding: 0rem 1rem;
-    }
-}
 .program-container h1 {
     text-align: center;
     font-size: 3.5rem;
     margin-bottom: 2rem;
 }
-@media (max-width: 480px) {
-    .program-container h1 {
-       font-size: 3rem;
-    }
-}
 .program-container h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-@media (max-width: 480px) {
-    .program-container h2 {
-        font-size: 1.5rem;
-    }
-}
 .program-container p {
     margin-bottom: 1rem;
-}
-@media (max-width: 480px) {
-    .program-container p {
-        font-size: 1rem;
-    }
 }
 .mahad-img {
     float: left;
@@ -381,26 +365,13 @@ p,li {
     margin-right: 20px;
     margin-bottom: 20px;
 }
-@media (max-width: 480px) {
-    .mahad-img {
-        height: 258px;
-        margin-right: 0px;
-        margin-bottom: 1rem;
-    }
-}
 .braces-img {
     float: right;
     height: 380px;
     margin-left: 20px;
     margin-bottom: 20px;
 }
-@media (max-width: 480px) {
-    .braces-img {
-        height: 168px;
-        margin-left: 0px;
-        margin-bottom: 1rem;
-    }
-}
+
 .kagan-img {
     float: left;
     height: 480px;
@@ -408,11 +379,131 @@ p,li {
     margin-right: 20px;
     margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+    .program-container {
+        padding: 0rem 1.5em;
+    }
+    .program-container h1 {
+        font-size: 3rem;
+    }
+    .program-container h2 {
+        font-size: 2rem;
+    }
+    .program-container p {
+        font-size: 1.2rem;
+    }
+    .mahad-img {
+        height: 358px;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .braces-img {
+        height: 218px;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .kagan-img {
+        height: 288px;
+        width: 425px;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
 @media (max-width: 480px) {
+    .program-border {
+        margin-top: 2rem;
+        height: 3rem;
+    }
+    .program-container {
+        padding: 0rem 1rem;
+    }
+    .program-container h1 {
+        font-size: 3rem;
+    }
+    .program-container h2 {
+        font-size: 1.5rem;
+    }
+    .program-container p {
+        font-size: 1rem;
+    }
+    .mahad-img {
+        height: 258px;
+        margin-right: 0px;
+        margin-bottom: 1rem;
+    }
+    .braces-img {
+        height: 168px;
+        margin-left: 0px;
+        margin-bottom: 1rem;
+    }
     .kagan-img {
         height: 218px;
         width: 340px;
         margin-right: 0px;
         margin-bottom: 1rem;
+    }
+}
+/* gallery section */
+.gallery-border {
+    display: block;
+    margin-top: 8rem;
+    height: 6rem;
+    visibility: hidden;
+}
+.gallery-container {
+    display: grid;
+    padding: 0rem 8rem;
+}
+.gallery-container h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.gallery-cell {
+    width: 66%;
+    height: 600px;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+}
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+.flickity-page-dots {
+    display: none;
+}
+@media (max-width: 768px) {
+    .gallery-border {
+        margin-top: 2rem;
+        height: 3rem;
+    }
+    .gallery-container {
+        display: grid;
+        padding: 0rem 1.5rem;
+    }
+    .gallery-cell {
+        width: 70%;
+        height: 300px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .gallery-border {
+        margin-top: 2rem;
+        height: 3rem;
+    }
+    .gallery-container {
+        display: grid;
+        padding: 0rem 0.5rem;
+    }
+    .gallery-cell {
+        width: 100%;
+        height: 255px;
+        margin-right: 0px;
     }
 }
