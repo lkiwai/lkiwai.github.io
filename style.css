@@ -343,17 +343,37 @@ p,li {
     display: grid;
     padding: 0rem 8rem;
 }
+@media (max-width: 480px) {
+    .program-container {
+        padding: 0rem 1rem;
+    }
+}
 .program-container h1 {
     text-align: center;
     font-size: 3.5rem;
     margin-bottom: 2rem;
 }
+@media (max-width: 480px) {
+    .program-container h1 {
+       font-size: 3rem;
+    }
+}
 .program-container h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+@media (max-width: 480px) {
+    .program-container h2 {
+        font-size: 1.5rem;
+    }
+}
 .program-container p {
     margin-bottom: 1rem;
+}
+@media (max-width: 480px) {
+    .program-container p {
+        font-size: 1rem;
+    }
 }
 .mahad-img {
     float: left;
@@ -361,11 +381,25 @@ p,li {
     margin-right: 20px;
     margin-bottom: 20px;
 }
+@media (max-width: 480px) {
+    .mahad-img {
+        height: 258px;
+        margin-right: 0px;
+        margin-bottom: 1rem;
+    }
+}
 .braces-img {
     float: right;
     height: 380px;
     margin-left: 20px;
     margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+    .braces-img {
+        height: 168px;
+        margin-left: 0px;
+        margin-bottom: 1rem;
+    }
 }
 .kagan-img {
     float: left;
@@ -373,4 +407,12 @@ p,li {
     width: 720px;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+    .kagan-img {
+        height: 218px;
+        width: 340px;
+        margin-right: 0px;
+        margin-bottom: 1rem;
+    }
 }
