@@ -14,6 +14,26 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+.loader {
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    transition: opacity 2s, visibility 2s;
+}
+.loader--hidden {
+    opacity: 1;
+    visibility: hidden;
+}
+.throbber {
+    background: var(---color-primary-1);
+    height: 300px;
+    width: 300px;
+}
 
 body {
     overflow-x: hidden;
