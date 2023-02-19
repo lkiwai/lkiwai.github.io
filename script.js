@@ -23,3 +23,49 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     })
 })
 
+// hamburger menu active & hover fx
+const hamburgerButton = document.querySelector('.hamburger-menu');
+const hamburgerMenu = document.getElementById('hamburgerMenu');
+const hamburgerClose = document.getElementById('burgerButton');
+const navLinks = document.querySelector('.nav-links');
+const body = document.querySelector('body');
+
+hamburgerButton.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('hamburger-is-active');
+    hamburgerButton.classList.toggle('hamburger-close');
+
+    if(hamburgerMenu.classList.contains('hamburger-is-active')) {
+        // disable scroll when hamburger menu is active
+        body.style.overflow = 'hidden';
+    } else {
+        // enable scroll when hamburger is closed
+        body.style.overflow = 'auto';
+    }
+
+
+})
+
+hamburgerButton.addEventListener('mouseover', () => {
+    hamburgerButton.style.color = 'rgb(255, 153, 0)';
+})
+hamburgerButton.addEventListener('mouseout', () => {
+    hamburgerButton.style.color = '';
+})
+
+// disable scroll
+// function disableScroll() {
+//     //Get current page scroll position
+//     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+//     //if any scroll is attempted, set this to the previous value
+//     window.onscroll = function() {
+//         window.scrollTo(scrollLeft, scrollTop);
+//     }
+// }
+
+// enable scroll
+// function enableScroll() {
+//     window.onscroll = function () {};
+// }
+
