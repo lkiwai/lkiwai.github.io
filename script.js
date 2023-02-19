@@ -80,9 +80,18 @@ contact.addEventListener('click',hideBurgerMenu);
 let yearUpdate = document.getElementById('currentYear');
 yearUpdate.innerHTML = new Date().getFullYear();
 
-// make loader disapper after page load
+// make loader disapper after page load while disabling scrolling while loading
 const removeLoader = document.getElementById('loaderRemove');
+const scrollHide = document.getElementById('scrollHide');
 
-window.addEventListener('load', function() {
+window.addEventListener('load', () => {
     removeLoader.classList.add('loader--hidden');
+    // body.style.overflow = 'hidden';
+    // window.addEventListener('scroll', () => {
+    //     body.style.overflow = 'visible';
+    // })
 })
+// scrolls to top when reloading page
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
