@@ -627,7 +627,122 @@ p,li {
 }
 .footer {
     display: flex;
-    background-color: #000;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    background-color: #fff;
     height: 50vh;
     margin: 0;
+}
+.logo-footer {
+    width: 250px;
+    height: auto;
+}
+.footer h1 {
+    color: #000;
+    font-size: 2.5rem;
+}
+.footer p {
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+@media (max-width: 820px) {
+    .footer {
+        height: 70vh;
+    }
+    .logo-footer {
+        width: 250px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .footer-msg {
+        border-bottom: 1px solid #000;
+        margin: 0rem 1.5rem;
+        padding: 1.5rem 0rem;
+        margin-bottom: 4rem;
+    }
+    .footer-msg p {
+        padding: 0rem 1rem;
+        font-size: 1rem;
+    }
+    .contact {
+        margin-bottom: 2rem;
+    }
+    .contact h1 {
+        margin-bottom: 0.5rem;
+    }
+    .contact p {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+    .footer h1 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        height: 70vh;
+    }
+    .logo-footer {
+        width: 250px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .footer-msg {
+        border-bottom: 1px solid #000;
+        margin: 0rem 1.5rem;
+        padding: 1.5rem 0rem;
+        margin-bottom: 4rem;
+    }
+    .footer-msg p {
+        padding: 0rem 1rem;
+        font-size: 1rem;
+    }
+    .contact {
+        margin-bottom: 2rem;
+    }
+    .contact h1 {
+        margin-bottom: 0.5rem;
+    }
+    .contact p {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+    .footer h1 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .footer {
+        height: 70vh;
+    }
+    .logo-footer {
+        width: 250px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .footer-msg {
+        border-bottom: 1px solid #000;
+        margin: 0rem 1.5rem;
+        padding: 1.5rem 0rem;
+        margin-bottom: 4rem;
+    }
+    .footer-msg p {
+        padding: 0rem 1rem;
+        font-size: 1rem;
+    }
+    .contact {
+        margin-bottom: 2rem;
+    }
+    .contact h1 {
+        margin-bottom: 0.5rem;
+    }
+    .contact p {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+    .footer h1 {
+        font-size: 2rem;
+    }
 }

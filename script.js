@@ -75,3 +75,7 @@ about.addEventListener('click',hideBurgerMenu);
 program.addEventListener('click',hideBurgerMenu);
 gallery.addEventListener('click',hideBurgerMenu);
 contact.addEventListener('click',hideBurgerMenu);
+
+// footer current year for copyright
+let yearUpdate = document.getElementById('currentYear');
+yearUpdate.innerHTML = new Date().getFullYear();
