@@ -79,3 +79,10 @@ contact.addEventListener('click',hideBurgerMenu);
 // footer current year for copyright
 let yearUpdate = document.getElementById('currentYear');
 yearUpdate.innerHTML = new Date().getFullYear();
+
+// make loader disapper after page load
+const removeLoader = document.getElementById('loaderRemove');
+
+window.addEventListener('load', function() {
+    removeLoader.classList.add('loader--hidden');
+})
