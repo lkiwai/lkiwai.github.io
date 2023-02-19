@@ -68,8 +68,10 @@ const home = document.getElementById('home');
 const about = document.getElementById('about');
 const program = document.getElementById('program');
 const gallery = document.getElementById('gallery');
+const contact = document.getElementById('contact');
 
 home.addEventListener('click',hideBurgerMenu);
 about.addEventListener('click',hideBurgerMenu);
 program.addEventListener('click',hideBurgerMenu);
 gallery.addEventListener('click',hideBurgerMenu);
+contact.addEventListener('click',hideBurgerMenu);

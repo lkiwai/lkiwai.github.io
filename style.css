@@ -561,7 +561,7 @@ p,li {
 .gallery-border {
     display: block;
     margin-top: 8rem;
-    height: 6rem;
+    height: 2rem;
     visibility: hidden;
 }
 .gallery-container {
@@ -617,4 +617,17 @@ p,li {
         width: 100%;
         height: auto;
     }
+}
+/* footer */
+.footer-border {
+    display: block;
+    margin-top: 8rem;
+    height: 1rem;
+    visibility: hidden;
+}
+.footer {
+    display: flex;
+    background-color: #000;
+    height: 50vh;
+    margin: 0;
 }
