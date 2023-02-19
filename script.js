@@ -23,49 +23,53 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     })
 })
 
-// hamburger menu active & hover fx
+// toggles nav-menu-active class 
 const hamburgerButton = document.querySelector('.hamburger-menu');
-const hamburgerMenu = document.getElementById('hamburgerMenu');
 const hamburgerClose = document.getElementById('burgerButton');
-const navLinks = document.querySelector('.nav-links');
+const navLink = document.getElementById('navLink');
+const blurMenu = document.querySelector('.blur-menu');
 const body = document.querySelector('body');
 
 hamburgerButton.addEventListener('click', () => {
-    hamburgerMenu.classList.toggle('hamburger-is-active');
-    hamburgerButton.classList.toggle('hamburger-close');
+    navLink.classList.toggle('nav-menu-active');
 
-    if(hamburgerMenu.classList.contains('hamburger-is-active')) {
-        // disable scroll when hamburger menu is active
-        body.style.overflow = 'hidden';
+    if(navLink.classList.contains('nav-menu-active')) {
+        openMenuFx()
     } else {
-        // enable scroll when hamburger is closed
-        body.style.overflow = 'auto';
+        closeMenuFx()
     }
-
-
 })
 
+// disable scroll when hamburger menu is active blurs the body when the hamburger menu appears
+function openMenuFx() {
+    body.style.overflow = 'hidden';
+    blurMenu.style.filter = 'blur(2px)';
+}
+// enable scroll when hamburger is closed and remove blur
+function closeMenuFx() {
+    body.style.overflow = 'auto';
+    blurMenu.style.filter = '';
+}
+// gives orange color when you hover mouse to hamburger butn
 hamburgerButton.addEventListener('mouseover', () => {
     hamburgerButton.style.color = 'rgb(255, 153, 0)';
 })
+// orange color disapper when you dont hover mouse to hamburger butn
 hamburgerButton.addEventListener('mouseout', () => {
     hamburgerButton.style.color = '';
 })
 
-// disable scroll
-// function disableScroll() {
-//     //Get current page scroll position
-//     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+// hide the burger menu when clicking links
+function hideBurgerMenu() {
+    navLink.classList.remove('nav-menu-active');
+    closeMenuFx()
+}
+const home = document.getElementById('home');
+const about = document.getElementById('about');
+const program = document.getElementById('program');
+const gallery = document.getElementById('gallery');
 
-//     //if any scroll is attempted, set this to the previous value
-//     window.onscroll = function() {
-//         window.scrollTo(scrollLeft, scrollTop);
-//     }
-// }
-
-// enable scroll
-// function enableScroll() {
-//     window.onscroll = function () {};
-// }
-
+home.addEventListener('click',hideBurgerMenu);
+about.addEventListener('click',hideBurgerMenu);
+program.addEventListener('click',hideBurgerMenu);
+gallery.addEventListener('click',hideBurgerMenu);
