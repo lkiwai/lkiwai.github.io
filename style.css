@@ -627,7 +627,7 @@ p,li {
     margin-bottom: 2rem;
 }
 .gallery-cell {
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 0;
 }
