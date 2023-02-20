@@ -86,10 +86,6 @@ const scrollHide = document.getElementById('scrollHide');
 
 window.addEventListener('load', () => {
     removeLoader.classList.add('loader--hidden');
-    // body.style.overflow = 'hidden';
-    // window.addEventListener('scroll', () => {
-    //     body.style.overflow = 'visible';
-    // })
 })
 // scrolls to top when reloading page
 window.onbeforeunload = function () {
