@@ -798,6 +798,10 @@ p,li {
     .footer {
         height: 70vh;
     }
+    .foot--content {
+        display: flex;
+        flex-direction: column;
+    }
     .logo-footer {
         width: 250px;
         height: auto;
@@ -831,6 +835,10 @@ p,li {
     .footer {
         height: 70vh;
     }
+    .foot--content {
+        display: flex;
+        flex-direction: column;
+    }
     .logo-footer {
         width: 250px;
         height: auto;
@@ -847,6 +855,7 @@ p,li {
         font-size: 1rem;
     }
     .contact {
+        border-left: 0px solid #000;
         margin-bottom: 2rem;
     }
     .contact h1 {
@@ -864,6 +873,10 @@ p,li {
     .footer {
         height: 70vh;
     }
+    .foot--content {
+        display: flex;
+        flex-direction: column;
+    }
     .logo-footer {
         width: 250px;
         height: auto;
@@ -873,13 +886,14 @@ p,li {
         border-bottom: 1px solid #000;
         margin: 0rem 1.5rem;
         padding: 1.5rem 0rem;
-        margin-bottom: 4rem;
+        margin-bottom: 0rem;
     }
     .footer-msg p {
         padding: 0rem 1rem;
         font-size: 1rem;
     }
     .contact {
+        margin-top: 2rem;
         margin-bottom: 2rem;
     }
     .contact h1 {
